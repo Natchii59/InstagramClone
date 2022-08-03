@@ -1,4 +1,5 @@
 const PFP_URI = 'https://picsum.photos/500/500';
+const FEED_URI = 'https://picsum.photos/1000/1000';
 
 export const stories = [
   {
@@ -36,5 +37,26 @@ export const stories = [
   {
     username: 'Jean',
     pfp: PFP_URI,
+  },
+];
+
+export const feed = [
+  {
+    username: 'Nathan',
+    pfp: PFP_URI,
+    image: FEED_URI,
+    likes: 200,
+    comment: 'Vous aimez la photo?',
+    comments: 75,
+    date: '10 minutes',
+  },
+  {
+    username: 'Jean',
+    pfp: PFP_URI,
+    image: FEED_URI,
+    likes: 100,
+    comment: 'WOW',
+    comments: 10,
+    date: '2 heures',
   },
 ];

@@ -17,16 +17,16 @@ export default function Stories() {
             style={styles.myPfp}
           />
           <View style={styles.iconPlus}>
-            <Icon name='plus' style={{ fontSize: 20, color: 'white' }} />
+            <Icon
+              name='plus'
+              style={{
+                fontSize: 18,
+                color: 'white',
+              }}
+            />
           </View>
         </View>
-        <Text
-          style={{
-            ...styles.username,
-            color: 'gray',
-          }}
-          numberOfLines={1}
-        >
+        <Text style={styles.myUsername} numberOfLines={1}>
           Votre story
         </Text>
       </View>
@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 60,
     backgroundColor: 'gray',
-    borderStyle: 'solid',
     borderWidth: 2,
     borderColor: 'white',
   },
@@ -98,12 +97,23 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     maxWidth: 65,
   },
+  myUsername: {
+    marginTop: 4,
+    fontSize: 12,
+    fontWeight: '500',
+    maxWidth: 65,
+    color: 'gray',
+  },
   iconPlus: {
     position: 'absolute',
     bottom: -4,
     right: -4,
     padding: 2,
+    width: 25,
+    height: 25,
     borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#34a1eb',
     borderColor: '#fff',
     borderStyle: 'solid',
